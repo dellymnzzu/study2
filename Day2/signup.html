@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>  <!-- form 태그에는 기본 method와 action이 있다. method에는 get,post등이 있고 action는 링크를 받으면 된다. -->
+    <table border="5">  <!-- 선을 5px로 준다. -->
+      <caption>회원가입</caption>  <!--제목을 적어준다. -->
+      <tr>  <!--행(가로줄을 만든다. )-->
+        <td><label for="name">이름</label></td>  <!--td는 tr 행들의 내용들을 말한다. -->    <!--label 태그는 -->
+        <td> <input type="text" id="name" /></td>
+      </tr>
+      <tr>
+        <td><label for="Id">아이디</label></td>
+        <td> <input type="text" id="Id" /></td>
+      </tr>
+      <tr>
+        <td><label for="pw">비밀번호</label></td>
+        <td> <input type="password" id="pw" /></td>
+      </tr>
+      <tr>
+        <td><label for="repw">비밀번호 확인</label></td>
+        <td> <input type="password" id="repw" /></td>
+      </tr>
+      <tr>
+        <td><label for="mail">이메일</label></td>
+        <td> <input type="email" id="mail" /></td>
+      </tr>
+      <tr>
+        <td><label for="">취미</label></td>
+        <td>
+          <input type="checkbox" id="mail">독서
+          <input type="checkbox" id="mail">요리
+          <input type="checkbox" id="mail">조깅
+          <input type="checkbox" id="mail">수영
+          <input type="checkbox" id="mail">취침
+        </td>
+      </tr>
+      <tr>
+        <td><label for="">전공</label></td>
+        <td>
+          <input type="radio" id="mail">국어
+          <input type="radio" id="mail">수학
+          <input type="radio" id="mail">영어
+          <input type="radio" id="mail">디자인
+        </td>
+      </tr>
+      <tr>
+        <td><label>전화번호</label></td>
+        <td>
+          <select>
+            <option>skt</option>
+            <option>kt</option>
+            <option>lg</option>
+          </select>
+        </td>
+
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>

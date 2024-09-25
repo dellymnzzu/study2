@@ -1,0 +1,18 @@
+body {
+    background-color: linen;
+  }
+  p{
+    background-color: red;
+  }
+  
+  h1 {
+    color: maroon;
+    border: 5px solid black;
+    padding-left: 10px;
+    margin-left: 40px;
+    
+  }
+  h2 {
+    color: yellow;
+   
+  }

@@ -1,0 +1,55 @@
+19. 다음 코드의 실행 결과를 예측하시오. 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic Page</title>
+    <style>
+        li > a:first-child { color: red; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+    </ul>
+</body>
+</html>
+
+
+답 : li 태그의 자손의 a의 첫번째 자식을 red로 변경해라.
+
+
+
+ 20. 첫 번째 a 태그에만 붉은색을 적용하려면 어떻게 해야 하나? 
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic Page</title>
+    <style>
+        li > a:first-child { color: red; }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+        <li><a href="#">주의 사항</a></li>
+    </ul>
+</body>
+</html>
+
+
+답 : 
+<style>
+li : first-child a{
+    color : red;
+}
+
+</style>
