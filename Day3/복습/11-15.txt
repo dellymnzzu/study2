@@ -1,0 +1,97 @@
+11. 다음 코드를 분석하시오
+<style>
+ 	#header h1, h2 {color:red;}
+</style>
+
+
+답 : id가 header인 후손 h1 그리고 모든 h2 태그에서 글자색을 red로 변경해라 
+
+
+
+12. 다음 코드를 분석하시오.
+
+<style>
+	#header h1, #header h2 {color:red; }
+</style>
+
+
+답 : id가 header인 후손 h1 그리고 id가 header인 후손 h2에서 글자색을 red로 변경해라 
+
+
+14. 다음 소스코드의 출력 결과를 예상하시오.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        #header > h1  { color: red; }
+        #section > h1 { color: orange; }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi risus, sollicitudin eget vehicula sed, eleifend suscipit neque. Proin rhoncus, ante vitae mattis consequat, libero nunc posuere justo, ut laoreet dolor nunc at dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum, lectus vestibulum laoreet tincidunt, nisi augue blandit risus, ut vestibulum erat dolor sit amet risus. Praesent semper consectetur mi eget auctor. Nulla facilisi. Duis bibendum massa in dui interdum sed tincidunt massa eleifend.</p>
+    </div>
+</body>
+</html>
+
+
+답 :  아이디 header의 자손인 h1 태그의 글자색을 red로 변경하고, 
+      아이디 section의 자손인 h1 태그의 글자색을 orange로 변경해라
+
+
+
+
+
+15. table 태그의 요소를 선택할 때는 자손 선택자 사용을 추천하지 않는다. 다음 코드의 실행 결과를 예측해 보자.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        table > tr > th {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>이름</th>
+            <th>지역</th>
+        </tr>
+        <tr>
+            <td>윤인성</td>
+            <td>서울특별시 강서구 내발산동</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+답 : table 태그의 자손 tr 태그의 자손 th를 글자 red로 변경되지 않는다. (스타일 속성 적용 안됨)
+
+
+
+
+
+
+
+
+대부분 th 태그에 붉은 색이 적용되는 것을 예상했겠지만 스타일 속성은 적용되지 않는다.
+크롬 브라우저에서 검사를 사용해 HTML 페이지의 계층 구조를 살펴보면 원인을 알 수 있다. table 태그에 자동으로 추가된 tbody 태그를 확인할 수 있다. 웹 브라우저가 tbody 태그를 자동으로 추가하므로 스타일 속성이 적용되지 않는다. 색상을 적용하려면 선택자 table > tbody > tr > th를 입력해야 한다. 혼동하기 쉬운 내용이므로 table 태그에 스타일을 적용할 때는 자손 선택자를 사용하지 말자,
+
+
+
+

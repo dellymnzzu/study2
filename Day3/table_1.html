@@ -8,25 +8,28 @@
         table {
             width: 1000px;
             border : 1px solid rgba(128, 128, 128, 0.178);
-            border-collapse: separate;
+            border-collapse: separate;  /*선이 두개 */
            
 
         }
-       table thead {
+       table tr:nth-child(1) {  /*테이블 제목에도 hover를 주기 위하여 table thead 삭제, 서로 다른 태그에서는 색상이 변경되지 않아서 같은 태그인 tr로 바꿈 */
         background-color: green;
-        color:white
+        color:white;
+        text-align: left;
         }
-        tbody tr:hover,thead tr:hover{
+
+        table tr:hover {  /*thead tr:hover 삭제, 마우스 커서를 올릴 때 배경색을 #aba5a5로 바꿈*/
             background-color: #aba5a5;
 
         }
 
-        tbody tr:nth-child(2n+1) {
+        tr:nth-child(even) {  /*even은 짝수를 설명*/
             background-color: rgba(128, 128, 128, 0.952);
 
         }
+        
 
-        tbody tr td, thead tr td {
+        tr td, th {
         
             padding : 10px;
 
@@ -37,59 +40,66 @@
 </head>
 <body>
     <table>
-        <tbody>
-            <th>
-                <td>Company</td>
-                <td>Contact</td>
-                <td>Country</td>
-            </th>
+        <tbody><!--thead 삭제 후 thead 안에 있는 값 tbody로 변경, td태그 내용 변경-->
+            <tr>  <!-- td태그를 th태그로 변경 -->
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
             <tr>
-                <td>Berhlunds snabbkop</td>
+                <td>Alfreds Futterkiste</td>
                 <td>Marla Anders</td>
                 <td>Germany</td>
             </tr>
             <tr>
-                <td>Centro comercial Moctezuma</td>
+                <td>Berhlunds snabbkop</td>
                 <td>Christina Berglund</td>
-                <td>Germany</td>
+                <td>Sweden</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
             </tr>
             <tr>
                 <td>Ernst Handel</td>
-                <td>Francisco Chang</td>
-                <td>Germany</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
             </tr>
             <tr>
                 <td>Island Trading</td>
-                <td>Roland Mendel</td>
-                <td>Germany</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
             </tr>
             <tr>
                 <td>Koniglich Essen</td>
-                <td>Helen Bennett</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
                 <td>Philip Cramer</td>
                 <td>Germany</td>
             </tr>
             <tr>
-                <td>Magazzini Alimentari Riuniti</td>
+                <td>Laughing Bacchus Winecellars</td>
                 <td>Yoshi Tannamuri</td>
-                <td>Germany</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
             </tr>
             <tr>
                 <td>North/South</td>
-                <td>Giovanni</td>
-                <td>Germany</td>
+                <td>Simon Crowther</td>
+                <td>UK</td>
             </tr>
 
+            
             <tr>
                 <td>Paris specialites</td>
-                <td>It</td>
-                <td>Germany</td>
+                <td>Marie Bertrand</td>
+                <td>France</td>
             </tr>
-        
+            
+
 
         </tbody>
         
