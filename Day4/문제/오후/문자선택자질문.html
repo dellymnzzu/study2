@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+             counter-set : rint 3;  /*생성하거나 재설정하는 속성이다. body에 주는 이유는 부모한테 먼저 생성을 한 후  초기화를 줘야하기 때문이다. 그래서 rint 3를 주었다.*/
+        }
+        p::before {  /*p의 전에 있는 문자를 설명한다. */
+            /* counter-set : rint 3;  이렇게 주다보면 값이 3으로 생성되기 때문에 부모한테 줘야한다.  */
+            counter-increment : rint 1;    /*카운터의 값을 지정한 값만큼 증가시키거나 감소시키는 속성, counter */
+            content : counter(rint) '.';    /*rint는 사용자 가상 클래스라고 생각하면 된다. */
+        }
+     
+        p::after {
+            content : "-" attr(data-page) " page"; /*p의 후에 있는 문자를 설명한다. attr은 가상클래스를 불러온다.  */
+
+    }
+    </style>
+    
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <p data-page ="1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> <!-- data-" "는 사용자가 임의로 정의한 클래스이다. p태그의 page를 임의로 정의했고 page를 1로 주었다.   -->
+
+    <p data-page ="2">Aenean ac erat et massa vehicula laoreet consequat et sem.</p>   
+
+
+
+
+
+
+
+
+
+    <!-- https://lunebleue.tistory.com/54 -->
+</body>
+
+
+
+</html>
+
+

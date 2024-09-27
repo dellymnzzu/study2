@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border : 3px solid green;
+            padding : 10px;
+        }
+        img{
+            float: left;
+        }
+        
+        p{
+            clear : both;
+        }
+
+        #box{
+            overflow: visible;
+        }
+
+        #I{
+            overflow : hidden;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>overflow 속성을 이용한 크기 조정</h1>
+    <div id = "box">
+        <img src = "img_flower.png">
+        <span>이미지와 함께 하고 싶은 내용</span>
+    </div>  
+    <p id = "P">overflow 속성값을 auto로 주면 자동으로 컨테이너 요소의 크기도 함게 늘어납니다!</p>
+    <div id = "I">
+        <img src = "img_flower.png">
+        <span>이미지와 함께 하고 싶은 내용</span>
+    </div>  
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Attribute</title>
+	<style>
+        input[type = "text"]{
+            background-color:antiquewhite;
+            width:150px;
+            display: block;  /*블럭을 준 이유는 원래 input 태그는 inline속성이기 때문에 block으로 준 후 너비를 주면된다. */
+            margin-bottom : 10px;
+        }
+        input[type = "password"]{
+            border:2px solid red;
+
+        }
+
+        input[type = "password"]:focus{
+            background-color: greenyellow;
+        }
+
+	</style>
+</head>
+
+<body>
+
+	<h1>속성 선택자를 이용한 선택</h1>
+	<form>
+		사용자 : <br>
+		<input type="text" name="username">
+		비밀번호 : <br>
+		<input type="password" name="password">
+	</form>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            background-color: rgba(0, 0, 0, 0.63);
+            width: 100%;
+            margin: 0;
+            padding: 0; 
+            overflow: hidden;
+            position: fixed;
+            top:0;
+
+
+        }
+        li{
+            float : left;  /*float 속성을 주면 높이가 먹지 않기 때문에 부모한테 강제로 부여하거나 overflow:hidden을 공식적으로 사용한다. 만약에 사용하지 않으면 사라지게된다.   */
+            
+        }
+        li a{  /*a태그를 href 사용할 시 ""에 #을 꼭 사용해야함*/
+            padding : 10px;
+            color : white;
+            text-decoration: none;
+            display: block;  /*좌우 공간 전부 사용*/
+
+        }
+        li a:hover:not(:active){
+            background-color: blanchedalmond;
+        }
+        li :active{
+            background-color: green;
+        }
+
+        /* li:hover{
+            background-color: blue;
+
+        } */
+
+        .hi{
+            height: 518000px;
+            padding : 30px 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <ul> 
+        <li><a href = "#">Home</a></li> 
+        <li><a href = "#">News</a></li>
+        <li><a href = "#">Contact</a></li>
+        <li><a href = "#">About</a></li>
+    </ul>
+
+    <div class = "hi">
+        <p>안녕하세요오오오오</p>
+        <p>안녕하세요오오오오</p>
+        <p>안녕하세요오오오오</p>
+    </div>
+    
+</body>
+</html>

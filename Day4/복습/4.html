@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            background-color: rgba(0, 0, 0, 0.63);
+            width: 100%;
+            margin: 0;
+            padding: 0; 
+            overflow: hidden;
+        }
+        li{
+            list-style: none;
+            float : left;  /*float 속성을 주면 높이가 먹지 않기 때문에 부모한테 강제로 부여하거나 overflow:hidden을 공식적으로 사용한다. 만약에 사용하지 않으면 사라지게된다.   */
+
+        }
+
+        li:hover{
+            background-color: blue;
+
+        }
+
+        li a{  /*a태그를 href 사용할 시 ""에 #을 꼭 사용해야함*/
+            margin : 10px;
+            color : white;
+            text-decoration: none;
+            display: block;  /*좌우 공간 전부 사용*/
+
+        }
+
+    </style>
+</head>
+<body>
+    <ul> 
+        <li><a href = "#">Home</a></li> 
+        <li><a href = "#">News</a></li>
+        <li><a href = "#">Contact</a></li>
+        <li><a href = "#">About</a></li>
+    </ul>
+    
+</body>
+</html>

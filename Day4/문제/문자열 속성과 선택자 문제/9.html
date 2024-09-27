@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+
+        img[src$="png"] {  /*type에 src나 width 등 속성을 넣으면 된다. */
+            border: 3px solid red;
+        }
+        img[src$="jpg"] {
+            border: 3px solid green;
+        }
+        img[src$="gif"] {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <img src="jajq.png" width="200" height="300" />
+    <img src="node.jpg" width="200" height="300" />
+    <img src="ux.gif" width="200" height="300" />
+</body>
+</html>
