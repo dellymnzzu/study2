@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            position: relative;
+            display: inline-block;
+
+        }
+
+
+        .btn-1{    
+            border: none;
+            background-color: rgba(9, 172, 9, 0.7);
+            border-style: none;
+            padding : 15px;
+            color : white;
+
+        }
+        .link li{
+            list-style-type: none;
+
+            display: none;
+            position: absolute;
+            padding : 20px 12px;
+            min-width: 100px;
+            box-shadow: 10px 15px 10px rgba(0,0,0,0.3);
+            z-index: 1;
+        }
+
+        .btn:hover .link{
+            display: block;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>dropdown Menu</h1>
+    <p>Move the mouse over the button to open the dropdown menu.</p>
+    <div class="btn">
+        <button class="btn-1">Dropdown</button>
+        <div class= "link">
+            <a>Link1</a>
+            <a>Link2</a>
+            <a>Link3</a>
+        </div>
+
+        <p>~~~~~~~~~~~~~~~~</p>
+    </div>
+</body>
+</html>

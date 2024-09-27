@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position : relative;
+            display: inline-block;
+
+        }
+        .cursor{
+            display: none;
+            position: absolute;
+            box-shadow: 3px 15px  15px rgba(0,0,0,0.2);
+            min-width: 160px;
+            padding : 12px 16px;
+            z-index : 1;  /*겹치는 요소들 위에 나타나도록 설정했다. absolute는 다른 요소들과 겹칠 가능성이 높기 떄문에 */
+        }
+
+        .dropdown:hover .cursor{
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Hoveralbe Dropdown</h1>
+    <p>Move the mouse over the text below to open the dropdown content.</p>
+    <div class = "dropdown">
+        <span>Mouse over me</span>
+        <div class = "cursor">
+            <p>Hello World!</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>

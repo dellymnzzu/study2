@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            counter-reset: link;
+        }
+
+        a[href]{
+
+            counter-increment: link;
+        }
+        a[href]:empty::after{
+            content : '[' counter(link) ']'; 
+
+        }
+    /* root에 리셋을 시킨 이유 : 만약에 a[href]에 리셋을 준다면 계속 초기화가 생김. 그래서 1만뜬다. */
+
+
+
+
+        
+
+    </style>
+</head>
+<body>
+    <ul>
+        <p>See<a href="https://www.mozilla.org/">leave a message!</a></p>
+        <p>Do not forget to<a href="3.html"></a></p>
+        <p>See also<a href="https://developer.mozilla.org/"></a></p>
+    </ul>  
+</body>
+</html>

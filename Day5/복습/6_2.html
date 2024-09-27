@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>CSS3 Selector Basic Page</title>
+    <style>
+        p {counter-reset: rint;}
+        p::before { content : counter(rint) '.' };
+        p::after { content:'-' attr(data-page) 'Page'};
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p data-page = "273">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p data-page = "279"></p>>Aenean ac erat et massa vehicula laoreet consequat et sem.Aenean ac erat et massa vehicula laoreet consequat et sem.</p>
+</body>
+</html>

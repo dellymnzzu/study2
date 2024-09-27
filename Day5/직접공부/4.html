@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: section;
+        }
+
+        li::before {
+            counter-increment: section;
+            content: counters(section,'-') '. ';
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>item</li> <!-- 1     -->
+        <li>item</li> <!-- 2     -->
+
+        <!--                         -->
+        <ol>    <!-- 왜 숫자로 나왔는지 궁금했는데 ol은 원래 숫자로 나오는...태그임..................-->
+            <li>item</li> <!-- 2.1   -->
+            <li>item</li> <!-- 2.2   -->
+            <li>item</li> <!-- 2.3   -->
+            <ol>
+                <li>item</li> <!-- 2.3.1 -->
+                <li>item</li> <!-- 2.3.2 -->
+            </ol>
+            <li>item</li> <!-- 2.4 -->
+            <ol>
+                <li>item</li> <!-- 2.4.1 -->
+                <li>item</li> <!-- 2.4.2 -->
+                <li>item</li> <!-- 2.4.3 -->
+            </ol>
+            <li>item</li> <!-- 2.5   -->
+        </ol>
+        <li>item</li> <!-- 3     -->
+        <li>item</li> <!-- 4     -->
+    </ol>
+
+    <!--                -->
+    <ol>
+        <li>item</li> <!-- 1     -->
+        <li>item</li> <!-- 2     -->
+    </ol>
+</body>
+
+</html>

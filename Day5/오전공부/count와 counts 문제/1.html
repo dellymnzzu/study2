@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            counter-reset: cont;   /*0으로 초기화 된다. 만약 5부터 시작하고 싶다면 시작을 4부터 주면된다. */
+        }
+        h1::before{
+            counter-increment: cont;  /*1증가하기 때문에 */
+            content : 'Section' counter(cont) ' : ';
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction</h1>
+    <h1>Body</h1>
+    <h1>Conclusion</h1>
+</body>
+</html>
