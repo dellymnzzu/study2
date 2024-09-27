@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0; box-sizing: border-box;}
+        body{background: #eee;}
+        .wrap{margin:60px auto; width: 600px; background: #fff;  padding: 30px 100px; }
+        h1{margin-bottom: 30px; text-align: center;}
+        table{width: 100%; border-collapse: collapse;}
+        tr{margin-bottom: 10px;}
+        td{height: 40px; line-height: 40px;}
+        td > input {height: 30px; width: 100%;border:1px solid #ddd; outline: none; padding: 0 5px;}
+       
+        .login a{display: flex; justify-content: center; align-items: center; width: 100%; height: 40px; background: pink; text-decoration: none; color: #333; font-weight: 600; margin-top: 30px;}
+
+        .txt{display:flex; justify-content: flex-end; align-items: center; margin-top: 10px;}
+        .txt p{font-size: 14px;color: #888;}
+        .txt a{text-decoration: none; color:#666; display:flex; align-items: center; justify-content: center; font-size: 14px; background: #eee; border:1px solid #d7d7d7; width: 70px; height: 25px; border-radius: 3px; margin-left: 10px;}
+        
+        /* .table ul li{display:flex; justify-content: space-between ; align-items: center;}
+        .table p{width: 100px;}
+        .table span{width: calc(100% - 120px); display:block;}
+        .table input{width: 100%;} */
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>로그인</h1>
+        <form action="">
+            <table>
+                <colgroup>
+                    <col width ="100px">
+                    <col width ="*">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td><label for="name">이름</label></td>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">비밀번호</label></td>
+                        <td><input type="password" name="password" id="password"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <div class="table">
+                <ul>
+                    <li>
+                        <p>아이디</p>
+                        <span><input type="text" name="" id=""></span>
+                    </li>
+                    <li>
+                        <p>아이디</p>
+                        <span><input type="text" name="" id=""></span>
+                    </li>
+                </ul>
+            </div> -->
+        </form>
+
+        <div class="login">
+            <a href="#">로그인</a>
+        </div>
+        <div class="txt">
+            <p>아이디가 없으시다면</p>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>
