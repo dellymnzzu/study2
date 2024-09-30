@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {   
+        font-family: Consolas; /*폰트의 글자를 Consolas로 변경한다. */
+        font-size: 16px;  /*모든 글자 사이즈를 16px로 변경한다.*/
+      }
+      .t {  
+        font-weight: bold;  /*폰트 굵기가 사용되는 폰트가 있고 사용되지 않는 폰트가 있다. 사용되는 폰트인지 확인 후 사용해야한다. */
+        color: #009688;
+      }
+      .a {
+        white-space: normal;   /*white-sapce의 기본은 normal 요소로 되어있고 공백을 어떻게 처리할건지 대한것을 보여준다. 
+                                white-space : normal은 스페이스바와 탭키 줄바꿈, 자동줄바꿈 모두 병합이 되어 하나로 보이게 된다.
+                                white-space: nowrap은 스페이스바를 아무리 눌러도 병합되어 하나로 보이게 만들고 줄바꿈도 똑같이 병합되어 하나로 보이게 만들지만, 
+                                            자동 줄바꿈이 일어나지 않는다. 
+                                white-space: pre은 스페이스와 탭은 준만큼 공백이 생기고 줄바꿈도 준 만큼 준만큼 준다.(자동으로 줄바꿈이 생기지 않는다. )*/
+      }
+      .b {
+        white-space: nowrap;
+      }
+      .c {
+        white-space: pre;
+      }
+      .d {
+        white-space: pre-wrap;
+      }
+      .e {
+        white-space: pre-line;
+      }
+    </style>
+</head>
+<body>
+    <p class="t">white-space: normal;</p>
+    <p class="a">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+    <p class="t">white-space: nowrap;</p>
+    <p class="b">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+    <p class="t">white-space: pre;</p>
+    <p class="c">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+    <p class="t">white-space: pre-wrap;</p>
+    <p class="d">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+    <p class="t">white-space: pre-line;</p>
+    <p class="e">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+</body>
+</html>

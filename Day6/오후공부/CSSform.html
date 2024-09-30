@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {  /*input의 타입이 text이고 그리고 select인 태그일 때 */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;  /* box-sizing은 요소의 너비와 높이를 계산하는 방법을 지정하는 것 
+  box-sizing : border-box일 경우 : width와 heigh 속성이 안쪽 여백과 테두리는 포함, 바깥 여백은 포함하지 않는다.
+  box-sizing : content-box일 경우 : 초기 기본값. width와 height 속성이 콘텐츠 영역만 포함, 안팎 여백과 테두리는 포함되지 않는다. 
+
+  예를 들어 .box {width: 350px; border: 10px solid black;}일 경우
+  content-box라면 요소의 너비는 370px이고, border-box라면 요소의 너비는 350px이다. 
+  
+                                 */
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
