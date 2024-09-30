@@ -10,129 +10,133 @@
     
     <style>
         body{
-            margin: 30px;
-
+            margin: 0;
+            padding : 0;
         }
-        header{
-            position: relative;
-        }
-        header #lnb{
-            position: absolute;
-            top : 0;
-            right:0;
-        }
-
-        header #gnb{
-            position :absolute;
-            display: inline-block;
-            right : 0;
-            bottom: -24px;
-
-        }
-
-        h1{
-            font-family: "Spicy Rice", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-     
-    
-
-        header ul {
-            list-style-type: none;
-            border: 2px solid black;
-            border-radius: 4px;
-            display: inline-block;
-            margin : 0;
-            padding : 0;   
+        .title{
+            display :flex;  /*가로 정렬 할 것들만 묶어서 디스플레이 플렉스 주고 세로 정렬은 줄 필요 없으니까 따로 줄 필요가 없다. */
+                    /* 플렉스는 가로 정렬 할 것들 부모에다가  주면 된다  */
+            flex-direction: column; /* 열로 지정하고 싶으면 flex-direction : column을 주면 된다. */
 
         }
 
 
-            
-   
-        header ul li {
-            float: left;
-            font-size: 10px;
-            border-right: 2px solid black;
-            padding : 5px 5px;
+        nav {
+            display : flex;
+            justify-content: flex-end;
 
         }
-        ul li:last-child{
-            border-style: none;
+         nav ul{ /*가로 정렬 할 것들만 묶기 위해 nav 태그가 아닌 ul 태그를 줘야한다. */
+            display: flex;
+            justify-content: row; /*맨 오른쪽으로 주려면 justify-content를 주면된다. */
+
         }
 
-        ul li a{
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        #home2 a{
-            font-size: 15px;
-        }
-        article,footer{
-            border : 2px solid black;
-            margin-bottom: 5px;
-        }
-
-        footer {
-            clear : both;
-            text-align: center;
-        }
-        
-        .Article{
-            float : left;
-            width: 80%;
-        }
-
-
-      .article1{
-        float : right;
-        width: 18%;
-        border : 1px solid black;
-
-      }
-      .article1 ul {
-        list-style-type: none;
-      }
-
-      .article1 .navbtn li{
-        float : left;
-        border : 1px solid black;
-        width : 80px;
-        margin : 10px;
-      }
-      .Nav table {
-    width: 100%;
-    border-collapse: collapse;
-    }
-
-        .Nav th {
+        nav li{
             border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-            }
+            list-style-type: none;
+            padding : 5px; 
+        }
+        nav li:nth-child(1){
+            border-radius: 10px 0 0 10px;
 
-        .Nav th {
-            background-color: #f2f2f2;
-            font-size: 18px;
-            }
+        }
+        nav li:last-child{
+            border-radius: 0 10px 10px 0;
 
-            tr td {
-                text-align: center;
-                
-
-            }
+        }
         
-        tbody tr .secondrd{
-            display: none;
+        nav li a {
+            text-decoration: none;
         }
 
-        
+        .Article{
+            display: flex;
+            justify-content: row;
 
-        th .fistrd:active, tr .firstrd{
-            display: block;
         }
+
+        .Article .article1{
+            display : flex;
+            justify-content: row;
+
+
+        }
+
+        .Article .articleh2{
+            display: flex;
+            flex-direction: column;
+            width : 80%;
+
+        }
+        .Article article {
+            border : 1px solid black;
+            padding : 10px;
+            margin: 10px;
+
+        }
+
+        .Nav{
+            display: flex;
+            flex-direction: column;
+            width : 20%;
+        }
+
+
+        .article1{
+            text-decoration: none;
+            padding : 10px;
+            margin : 16px 0;
+            font-size: 40px;
+        }
+
+        .article1 a{
+            text-decoration: none;
+            padding : 10px;
+            margin : 16px 0;
+            font-size: 40px;
+        }
+
+        .Nav li{
+            border: 1px solid black;
+            list-style-type: none;
+            }
+
+        .Nav ul li a{
+                display : flex;
+                justify-content: row;
+                margin: 10px 10px 0 0 ;
+                padding : 0;
+            }
+
+        .Nav ul li a .tc{
+                margin-left : 10px; 
+            }
+
+
+            footer{
+               text-align: center;
+            }
+
+            /* tab */
+            .rightBox{width: calc(20% - 20px); /*값을 20%, 여백을 20px 로 준다. */
+            margin-top: 10px;}
+            .rightBox > ul{list-style: none; display:flex; width: 100%; margin: 0; padding: 0; position:relative;}
+            .rightBox > ul > li {width: 50%;}
+            .rightBox > ul > li label{display:flex; justify-content: center; align-items: center; width: 100%; height: 50px; border:1px solid #000; cursor: pointer; box-sizing: border-box;}
+            .rightBox > ul > li:first-child label{border-right: 0;}
+            .rightBox > ul > li input[type="radio"]{display:none;}
+
+            .rightBox .cont{position: absolute; top:50px; left:0; list-style: none; margin: 0; padding: 0; width: 100%; display: none;}
+            
+            .rightBox .cont li a{display:block; border:1px solid #000; width: 100%; padding: 10px; box-sizing: border-box; border-top: 0; text-decoration: none; color: #000;}
+
+            .rightBox input[type="radio"]:checked ~ label{background: #000; color: #fff;}
+            .rightBox input[type="radio"]:checked ~ .cont{display:block;}
+       
+
+
+
 
 
 
@@ -141,9 +145,8 @@
     
 </head>
 <body>
+
     <header>
-        <h1>Rint Development</h1>
-        <h2>HTML5 + CSS3 Basic</h2>
         <nav id="lnb">
             <ul id = "home1">
                 <li><a href = "#">web</a></li>
@@ -153,61 +156,165 @@
                 <li><a href = "#">Data</a></li>
             </ul>
         </nav>
-        <nav id="gnb">
-            <ul id = "home2">
-                <li><a href = "#">HTML5</a></li>
-                <li><a href = "#">CSS3</a></li>
-                <li><a href = "#">JavaScript</a></li>
-                <li><a href = "#">jQuery</a></li>
-                <li><a href = "#">Node.js</a></li>
-            </ul>
-        </nav>
+        <div class = "title"></div>
+        <h1>Rint Development</h1>
+        <h2>HTML5 + CSS3 Basic</h2>
+
+    
+            <nav id="gnb">
+                <ul id = "home2">
+                    <li><a href = "#">HTML5</a></li>
+                    <li><a href = "#">CSS3</a></li>
+                    <li><a href = "#">JavaScript</a></li>
+                    <li><a href = "#">jQuery</a></li>
+                    <li><a href = "#">Node.js</a></li>
+                </ul>
+            </nav>
+
     </header>
 
-
-
         <div class = "Article">
-            <article>
-                <h2>Main Article</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
-            </article>
-            <article>
-                <h2>Main Article</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
-            </article>
-            <article>
-                <h2>Main Article</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
-            </article>
-        </div>
-        <nav class="Nav">
-            <div class="article1">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class = "firstrd">First</th>
-                            <th class = "secondrd">Second</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class = "firstrd">
-                                <input type="radio" name="first">HTML5 Canvas<br>
-                                <input type="radio" name="first">HTML5 Audio<br>
-                                <input type="radio" name="first">HTML5 Video<br>
-                                <input type="radio" name="first">HTML5 Semantic Web<br>
-                            </td>
-                            <td class = "secondrd">
-                                <input type="radio" name="second">CSS3 Transition<br>
-                                <input type="radio" name="second">CSS3 Animation<br>
-                                <input type="radio" name="second">CSS3 Border<br>
-                                <input type="radio" name="second">CSS3 Box<br>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class = "articleh2">
+                <article>
+                    <h2>Main Article</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+                </article>
+                <article>
+                    <h2>Main Article</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+                </article>
+                <article>
+                    <h2>Main Article</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+                </article>
             </div>
-        </nav>
+
+            <!-- <aside class="Nav">
+                 <div class="article1">
+                        <a href = "#" class = "firstrd">First</a>
+                        <a href = "#" class = "secondrd">Second</a>
+                        </div>
+
+                        <div class = "tapmenu">
+                            <ul>
+                                <li>
+                                    <a><img src="https://via.placeholder.com/45x45" />
+                                        <div class = "tc">
+                                            <div class ="tcTitle">HTML5 Canvas</div>
+                                            <p class = "tcDate">2012-03-15</p>
+                                            
+                                        </div>
+                                    </a>
+                                </li>
+
+                                    <li>
+                                        <a><img src="https://via.placeholder.com/45x45" />
+                                            <div class = "tc"> 
+                                                <div class ="tcTitle">HTML5 Audio</div>
+                                                <p class = "tcDate">2012-03-15</p>
+                                                
+                                            </div>
+                                        </a>
+                                   </li>
+                                   <li>
+                                       <a><img src="https://via.placeholder.com/45x45" />
+                                        <div class = "tc">
+                                            <div class ="tcTitle">HTML5 Video</div>
+                                            <p class = "tcDate">2012-03-15</p>
+                                            
+                                        </div>
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a><img src="https://via.placeholder.com/45x45" />
+                                        <div class = "tc">
+                                            <div class ="tcTitle">HTML5 Semantic web</div>
+                                            <p class = "tcDate">2012-03-15</p>
+                                        </div>
+                                       </a>
+                                  </li>
+
+                            </ul>
+                            </div>
+
+                            <div class = "tapmenu2">
+                                <ul>
+                                    <li>
+                                        <a><img src="https://via.placeholder.com/45x45" />
+                                            <div class = "tc">
+                                                <div class ="tcTitle">CSS3 Transition</div>
+                                                <p class = "tcDate">2012-03-15</p>
+
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a><img src="https://via.placeholder.com/45x45" />
+                                            <div class = "tc">
+                                                <div class ="tcTitle">CSS3 Animation</div>
+                                                <p class = "tcDate">2012-03-15</p>
+
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a><img src="https://via.placeholder.com/45x45" />
+                                            <div class = "tc">
+                                                <div class ="tcTitle">CSS3 Border</div>
+                                                <p class = "tcDate">2012-03-15</p>
+
+
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a><img src="https://via.placeholder.com/45x45" />
+                                            <div class="tc">
+                                                <div class ="tcTitle">CSS3 Box</div>
+                                                <p class = "tcDate">2012-03-15</p>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                </ul>
+
+
+                            </div>
+                            </div> 
+              </aside>-->
+                    
+            
+            <div class="rightBox">
+                <ul>
+                    <li>
+                        <input type="radio" id="first" name="list" checked>
+                        <label for="first">First</label>
+                        <ul class="cont">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">1</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="second" name="list">
+                        <label for="second">Second</label>
+                        <ul class="cont">
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
 
 
 
