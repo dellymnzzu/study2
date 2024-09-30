@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropbtn {    /*드롭다운 버튼들을 클릭 할 시에 */
+            background-color: #4CAF50;  /* 배경색상을 #4CAF50로 준다.   */
+            color: white;  /* 버튼 글자 색상을 흰색으로 준다.  */
+            padding: 16px;  /* padding을 상하좌우 16px씩 준다.  */
+            font-size: 16px;  /* 글자 사이즈를 16px로 준다.  */
+            border: none;  /* 테두리를 없앤다.  */
+            cursor: pointer;  /* 커서를 pointer로 준다.   */
+        }
+
+        .dropdown {  /* 클래스 dropdown */
+            position: relative;   /* 상대적으로 배치하고 부모 요소(static)의 위치부터 계산한다.   */
+            display: inline-block;  /* 
+            
+
+            inline과 inline-block의 공통점 : 블럭요소만큼 차지 하지 않고 내용만큼의 너비의 값을 준다.;
+            inline 과 inline-block 차이점 
+            inline : 높이와 너비의 값을 줄 수 없고 margin 값을 상하 여백의 값을 줄 수 없다. 
+            inline-block : inline과 다르게 높이,너비,margin 값의 상하 여백의 값을 줄 수 있다. 
+            
+            
+            */
+        }
+
+        .dropdown-content {  /*클래스 dropdown-content*/
+            display: none;   /* 화면에 나오지 않게 만든다.  */
+            position: absolute;  /* 독립된 배치를 하며 부모요소 속박이 되지 않는다. 가장 가까운 기준으로 결정하기 때문에 
+                                    부모의 요소에 height값을 꼭 줘야한다.  */
+            right: 0;  /* 부모 요소의 오른쪽 끝에 맞춰 배치 (0픽셀 거리)  */
+            background-color: #f9f9f9;  /* 배경 색을 #f9f9f9로 준다. */
+            min-width: 160px;  /* 최소 너비를 160px로 주었으며 반응형이기 때문에 최소 160px로 밖에 줄어들지 않는다.    */
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);  /* 그림자 효과를 추가, 아래로 8픽셀, 오른쪽으로 16픽셀의 흐림 효과 */
+            z-index: 1;  /* 요소의 쌓임 순서를 설정 (값이 클수록 위에 쌓임) */
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;    /* a태그의 밑줄을 없앴다. */
+            display: block;  /* 화면에 나오게 만든다. */
+        }
+
+        .dropdown-content a:hover {   /*.dropdown-content a태그들을 마우스 커서가 닿으면 */
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {  /* dropdown의 마우스 커서가 닿는 dropdown-content들은 */
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Aligned Dropdown Content</h2>
+    <p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>
+
+    <div class="dropdown" style="float:left;">
+        <button class="dropbtn">Left</button>
+        <div class="dropdown-content" style="left:0;">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="dropdown" style="float:right;">
+        <button class="dropbtn">Right</button>
+        <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+</body>
+</html>

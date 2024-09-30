@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {   /*ul 태그 안에 있는 모든 것들에게 */
+  list-style-type: none;  /*ul은 기본 원형 기호가 나타나기 때문에 스타일을 none으로 줘야한다. */
+  margin: 0;
+  padding: 0;    /* 기본적으로 부라우저가 갖고있는 margin 태그와 padding 태그를 초기화 하기 위해 0으로 주었다. */
+  overflow: hidden;  /*자식 요소가 부모 요소를 넘어갈 때 숨김*/ 
+  background-color: #333;
+}
+
+li {
+  float: left;  /*li를 왼쪽으로 정렬하게 하고 다른 요소와 나란히 배치할 수 있도록 한다. */
+}
+
+li a, .dropbtn {  /*li태그의 후손 a그리고 클래스 dropbtn은*/
+  display: inline-block;  
+  color: white;
+  text-align: center;  /*텍스트의 정렬을 가운데 정렬을 주었다.*/
+  padding: 14px 16px;  /* 패딩의 상하 여백의 값을 14px로 주고 좌우 여백의 값을 16px로 주었다.*/
+  text-decoration: none;  /*a태그의 밑줄을 없애준다. */
+}
+
+li a:hover, .dropdown:hover .dropbtn {  /*li의 후손 a태그가 마우스가 닿을 때 그리고 클래스 dropdown의 요소가 마우스에 닿을 때 그 후손 dropbtn은 */
+  background-color: red;  /*배경색이 red로 바뀐다.*/
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>   <!--javascript:void(0) : 클릭시 아무런 작업도 먹지 않게 된다.
+    
+                                        클릭했을 때 페이지를 새로 고치거나 다른 페이지로 이동하지 않도록 하는 역할-->
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+</body>
+</html>
