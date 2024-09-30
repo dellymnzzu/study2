@@ -27,23 +27,23 @@
 
     </style>
 </head>
-<body>
-    <div class="wrap">
+<body>   <!-- body부분은 전체 부분이기 때문에 주면 안된다. -->
+    <div class="wrap">   <!--div 태그를 주어 높이와 넓이를 주면 정가운데로 바뀜-->
         <h1>로그인</h1>
-        <form action="">
-            <table>
-                <colgroup>
-                    <col width ="100px">
-                    <col width ="*">
+        <form action="">  <!-- form태그를 주어야지 날라감.-->
+            <table>  <!--테이블을 사용 하면 편리한 점도 있지만, 디자인을 줄 때 불편한 점이 있다. -->
+                <colgroup>  <!--열 그룹을 정의하는데 사용되는 태그. 보통 스타일이나 속성을 적용할 때 유용하다. -->
+                    <col width ="100px">  <!--col 태그가 두개면 두개의 열을 사용하겠다는 소리이다. 첫번째 열은 100px 너비 사용하겠다는 의미 -->
+                    <col width ="*">  <!--나머지 공간을 차지하겠다는 의미-->
                 </colgroup>
-                <tbody>
-                    <tr>
-                        <td><label for="name">이름</label></td>
-                        <td><input type="text" name="name" id="name"></td>
+                <tbody> <!--테이블 본문 정의-->
+                    <tr>  <!-- 테이블 행 정렬-->
+                        <td><label for="name">이름</label></td>  <!--for ="name"을 사용하면 id가 name인 곳을 알려준다. -->
+                        <td><input type="text" name="name" id="name" required></td> <!--required는 사용자가 필수 정보를 입력할 수 있도록 유도하는 것이다. 브라우저 제출을 막고 오류 메시지를 출력한다. -->   
                     </tr>
                     <tr>
                         <td><label for="password">비밀번호</label></td>
-                        <td><input type="password" name="password" id="password"></td>
+                        <td><input type="password" name="password" id="password" required ></td>
                     </tr>
                 </tbody>
             </table>
