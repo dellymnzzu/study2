@@ -4,58 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <style>
-        body{
-            display: flex;
-            justify-content: center;
-            width: 500px;
-            margin : 100px auto;
-            padding : 80px;
-        }
+      *{
+        padding : 0;
+        margin : 0;
+      }
+      body{
+        background-color : grey;
+        display : flex;
+        justify-content: center;
+        flex-direction: column;
+        margin : 150px auto;
+        padding : 80px;
+      }
 
-        .signupPage{
-            
-        }
-    </style>
+      .signUpPage{
+        background-color : white;
+        display : flex;
+        width : 500px;
+        justify-content: center;
+        flex-direction: column;
+        padding : 50px;
+
+      }
 
 
+
+      header h1{
+        text-align : center;              
+        font-size : 2.5em;
+        padding-bottom : 20px;
+      }
+
+      fieldset{
+        border : none;
+        width : 250px;
+
+      }
+
+      fieldset .loginInput li{
+        padding : 10px;
+        list-style-type : none;
+        width : 500px;
+        display : flex;
+      }
+
+      label {
+        width : 70px;
+        margin-top : 5px;
+      }
+
+      li input {
+        padding : 9px;
+        border : 1px solid grey;
+        border-radius : 5px;
+        width : 80%;
+      }
+
+      .btns {
+        border : 1px solid pink;
+        border-radius : 6px;
+        background-color : pink;
+        padding : 10px;
+        text-align : center;
+        margin-bottom : 10px;
+
+      }
+
+      .btns:hover {
+        background-color : red;
+      }
+
+      .btns a{
+        font-size : 20px;
+        font-weight : bold;
+      }
+
+      .QBTN {
+        list-style-type : none;
+        display : flex;
+        justify-content: space-evenly;
+
+      }
+      a{
+        text-decoration :none;
+        color : black;     
+     }
+
+     .QBTN li a:active {
+       color : red;
+     }
+
+
+
+
+
+
+
+
+     
+
+      </style>
 </head>
 <body>
-    <div class = "signupPage">
-        <header class="singInPage">  <!--css를 주기 위해 div 태그로 전체를 묶었다. -->
-    
-            <h1>회원가입</h1>
-        </header>
-        <form method="post" action="/signup">
-            <fieldset>
-                <ul class="loginInput">
-                    <li><label for="ID">아이디</label>  <!--for = "값"은 아이디가 값과 같은 곳에 포커스를 둔다. -->
-                        <input type="text" name="ID" id="ID" placeholder="아이디를 입력해주세요" required> <!--placeholder는 문자나 이미지 등이 들어갈 자리에 임시로 채워 놓는 내용물이다. required는 폼 데이터(form data)가 서버로 제출되기 전 반드시 채워져 있어야 하는 입력 필드를 명시한다.  -->
-                    </li>
-                    <li><label for="pw">비밀번호</label>
-                        <input type="password" name="PW" id="pw" placeholder="비밀번호를 입력해주세요" required>
-                    </li>
-                    <li><label for="repw">한번더</label>
-                        <input type="password" name="REPW" id="repw" placeholder="한번 더 입력해주세요." required>
-                    </li>
-                    <li><label for="name">이름</label>
-                        <input type="text" name="name" id="name" placeholder="이름을 입력해주세요" required>
-                    </li>
-                </ul>
-            </fieldset>
-    
-            <div class="btns">
-                <a id="loginbtn" href="#">가입</a>
-            </div>
-            <nav class="QBTN">
-                <li><a href="#">아이디 찾기</a></li>
-                <li><a data-line="| " href="#">비밀번호 찾기</a></li>
-                <li><a data-line="| " href="signup.html">회원가입</a></li>
-            </nav>
-    
-    </div>
-        
-        </body>
+  <div class = "signUpPage">
+    <header class="singPage">  <!--css를 주기 위해 div 태그로 전체를 묶었다. -->
+
+        <h1>회원가입</h1>
+    </header>
+    <form method="post" action="/signup">
+        <fieldset>
+            <ul class="loginInput">
+                <li><label for="ID">아이디</label>  <!--for = "값"은 아이디가 값과 같은 곳에 포커스를 둔다. -->
+                    <input type="text" name="ID" id="ID" placeholder="아이디를 입력해주세요" required> <!--placeholder는 문자나 이미지 등이 들어갈 자리에 임시로 채워 놓는 내용물이다. required는 폼 데이터(form data)가 서버로 제출되기 전 반드시 채워져 있어야 하는 입력 필드를 명시한다.  -->
+                </li>
+                <li><label for="pw">비밀번호</label>
+                    <input type="password" name="PW" id="pw" placeholder="비밀번호를 입력해주세요" required>
+                </li>
+                <li><label for="repw">한번더</label>
+                    <input type="password" name="REPW" id="repw" placeholder="한번 더 입력해주세요." required>
+                </li>
+                <li><label for="name">이름</label>
+                    <input type="text" name="name" id="name" placeholder="이름을 입력해주세요" required>
+                </li>
+            </ul>
+        </fieldset>
+
+        <div class="btns">
+            <a id="loginbtn" href="#">가입</a>
+        </div>
+        <nav class="QBTN">
+            <li><a href="#">카카오 회원가입</a></li>
+            <li><a  href="#">네이버 회원가입</a></li>
+            <li><a  href="sign.html">로그인하기</a></li>
+        </nav>
+
+</div>
 </body>
 </html>
