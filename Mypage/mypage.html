@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+        }
+        body {
+            display : flex;
+            justify-content: center;
+           
+
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navlink {
+            display : flex;
+            flex-direction: row;
+        }
+
+        nav #logo{
+            font-size: 2em;
+        }
+
+        li {
+            list-style: none;
+
+
+        }
+
+        a{
+            text-decoration: none;
+            color : grey;
+            padding : 10px;
+        }
+
+        header{
+            display : flex;
+            align-items: center;  /*가로 중앙 배치*/
+            flex-direction: column;
+            padding : 30px;
+            margin: 30px;
+        }
+
+        .wishList span{
+            font-size : 2em;
+
+        }
+
+        img {
+            width: 250px;
+            height : 250px;
+            margin: 10px;
+        }
+
+        .wishListImage{
+            display : flex;
+            justify-content: space-around;
+            border : 1px solid rgb(179, 174, 174);
+        }
+
+        .order_ing{
+            display : flex;
+            flex-direction: column;
+            padding : 10px;
+            margin-top : 30px;
+            border : 1px solid black;
+        }
+
+        .order_Body {
+            display : flex;
+            flex-direction: row;
+            margin : 10px;
+            justify-content: space-between;
+
+        }
+
+        .order_title{
+            display: flex;
+            border-bottom : 1px solid black;
+            
+        }
+
+        .order_title p {
+            margin : 10px;
+        }
+
+        .order_title span {
+            font-size : 12px;
+            margin-top : 12px;
+        }
+
+
+        button {
+            padding : 15px;
+            margin: 10px 0;
+            width : 100px;
+            background-color: pink;
+            border-style : none;
+            border-radius: 5px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class = "mypagePage">
+        <nav>
+            <li><a id = "logo"href = "main.html">로고</a></li>
+                <ul class = "navlink">
+                    <li><a href="#">글쓰기</a></li>
+                    <li><a href="#">로그아웃</a></li>
+                </ul>
+                
+            </nav>
+        <header>
+            <div class = "headerTitle"></div>
+            <p>환영합니다.</p>
+            <p>ㅇㅇㅇ님의 아이디는 ㅇㅇㅇㅇ입니다.</p>
+        </header>
+
+        <div class = "wishList">
+            <span>WISH LIST</span>
+            <ul class = "wishListImage">
+                <li><img href = "#"></li>
+                <li><img href = "#"></li>
+                <li><img href = "#"></li>
+                <li><img href = "#"></li>
+                <li><img href = "#"></li>
+            </ul>
+        </div>
+
+        <div class = "order_ing">
+            <div class = "order_title">
+                <p>나의 주문처리 현황</p>
+                <span>(최근 3개월 기준)</span>
+
+            </div>
+            <div class = "order_Body">
+            <div class = "order_body">
+                <strong>입금전</strong>
+                    <li><a href = "#">0</a></li>
+            </div>
+                <div class ="order_body">
+                    <strong>배송준비중</strong>
+                    <li><a href = "#">0</a></li>
+    
+                </div>
+                <div class = "order_body">
+                    <strong>배송중</strong>
+                    <li><a href = "#">0</a></li>
+    
+                </div>
+                <div class = "order_body">
+                    <strong>배송완료</strong>
+                    <li><a href = "#">0</a></li>
+    
+                </div>
+            </div>
+            
+                    
+
+                
+                
+
+
+        </div>
+        <div class = "updateBTN">
+            <button>수정</button>
+        </div>
+
+    </div>
+</body>
+</html>
