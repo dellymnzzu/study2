@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin:0;
+        padding : 0;
+      }
+      body .formtag {
+        background-color: grey;
+        margin: 10px;
+        padding : 10px;
+      }
+
+      form{
+        display : flex;
+        flex-direction: column;
+      }
+
+      #submit {
+        background-color: green;
+        margin-top: 10px;
+        border-style: none;
+      }
+    </style>
+</head>
+<body>
+    <h3>Using CSS to style an HTML Form</h3>
+
+<div class = "formtag">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit" id = "submit">
+  </form>
+</div>
+
+</body>
+</html>

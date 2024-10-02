@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let sum = 0;      // 4의 배수 개수를 세기 위한 변수
+        let counter = 0;  // 카운터 변수 초기화
+
+        for (let num = 0; num < 100; num++) {
+            if (num % 4 === 0) { // num이 4의 배수인지 확인
+                counter++; // 4의 배수이면 카운터 증가
+            }
+        }
+        console.log("4의 배수 갯수 = " + counter); // 결과 출력
+    </script>
+</body>
+</html>

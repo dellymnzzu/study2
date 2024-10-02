@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div .BTN{
+        display : flex;
+        justify-content: space-between;
+    }
+
+    button{
+        width: 70px;
+        height: 50px;
+        border: none;
+        background-color: green;
+        color : white;
+    }
+    ul {
+        display: none;
+        border : none;
+        box-shadow: 5px 5px 10px grey;
+        margin: 0;
+        padding: 0;
+
+
+    }
+    ul li {
+        list-style-type: none;
+        padding : 10px 20px;
+
+        
+    }
+
+    li:hover{
+        background-color: rgb(172, 170, 170);
+    }
+
+    ul li a {
+        text-decoration: none;
+        color : black;
+
+    }
+
+    button:active{
+        background-color: rgb(1, 85, 1);
+    }
+
+    .btnLeft:hover ul{
+        display: block;
+    }
+
+    .btnRight:hover ul{
+        display: block;
+    }
+
+ 
+
+
+
+
+</style>
+<body>
+    <div>
+        <header>
+            <h1>Aligned Dropdown Content</h1>
+        </header>
+
+        <article>
+            <p>Detemine whether the dropdown content shold go from left to right or right to left with the left and right properties.</p>
+           <div class = "BTN">
+            <div class = "btnLeft">
+                <button id = "left">Left</button>
+                <ul class = "link">
+                    <li><a href = "#">Link 1</a></li>
+                    <li><a href = "#">Link 2</a></li>
+                    <li><a href = "#">Link 3</a></li>
+                </ul>
+                
+
+            </div>
+            <div class = "btnRight">
+                <button id = "right">Right</button>
+                <ul class = "link">
+                    <li><a href = "#">Link 1</a></li>
+                    <li><a href = "#">Link 2</a></li>
+                    <li><a href = "#">Link 3</a></li>
+
+                </ul>
+
+
+            </div>
+           </div>
+            
+        </article>
+
+
+    </div>
+</body>
+</html>
