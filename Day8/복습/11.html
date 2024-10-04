@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>boolean</title>
+</head>
+<body>
+  <script>
+    let result;
+
+    result = 5 > 3;
+    console.log(result);	  // true
+    result = 5 < 3;
+    console.log(result);	  // false
+    result = 5 == 3;
+    console.log(result);	// fasle
+    result = 5 == 5;
+    console.log(result);	  // true
+    result = 5 != 3;	
+    console.log(result);	// true
+    result = 5 != 5;
+    console.log(result);	//false
+    
+    console.log(typeof("3"));   //string
+    console.log(typeof(3));      // int
+
+    result = 5 == "5";      
+    console.log(result);	   // true  이유 : 문자열로 자동 변환 숫자만 같으면됨
+    result = 5 === "5";     
+    console.log(result);  // false; 이유 : 문자형이 다르기 때문에
+
+    result = 5 != "5";      
+    console.log(result);	// flase
+    result = 5 !== "5";     
+    console.log(result);    // true
+  </script>

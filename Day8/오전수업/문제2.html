@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+        let arr = [];
+
+        arr[0] = parseInt(prompt("숫자 1번을 입력해주세요."));
+        arr[1] = parseInt(prompt("숫자 2번을 입력해주세요"));
+        arr[2] = parseInt(prompt("숫자 3번을 입력해주세요"));
+        arr[3] = parseInt(prompt("숫자 4번을 입력해주세요"));
+        arr[4] = parseInt(prompt("숫자 5번을 입력해주세요"));
+
+
+
+    for(let i = 0;i<5;i++){
+        for(let j = 0; j<4;j++){
+            if (arr[j]>arr[j+1]){  // arr[i]가 아니라 arr[j]인 이유 : i는 j가 끝날 때 바뀌기 때문에
+                let num = 0;
+
+                num = arr[j];  // num의 값은 5 
+                arr[j] = arr[j+1];  // arr[i]의 값
+                arr[j+1]=num;
+            }
+        }
+    }
+    for(let i = 0; i < 5; i++){
+
+        document.write(arr[i]);	
+    }
+    
+    </script>
+</body>
+</html>
+
+

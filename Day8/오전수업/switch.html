@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dowhile</title>
+</head>
+
+<body>
+    <script>
+        let num = 0;
+        let num1 = 0;
+
+        // 만약 정수로 입력받고 싶으면 num = pasreInt(num); 해주면 된다
+        // 형변환을 시키는 이유 : 아스키코드에서는 50보다 6이 더 크기 때문이다. 
+        num = 0;
+        num1 = parseInt(prompt("숫자 1번을 입력해주세요"));
+        num2 = parseInt(prompt("숫자 2번을 입력해주세요"));
+        num3 = parseInt(prompt("숫자 3번을 입력해주세요"));
+        num4 = parseInt(prompt("숫자 4번을 입력해주세요"));
+        num5 = parseInt(prompt("숫자 5번을 입력해주세요"));
+
+        console.log(typeof (num));
+
+        switch (num <= 5) {
+            case num1 > num2:
+                num = num1;
+                num1 = num2;
+                num2 = num;
+            case num1 > num3:
+                num = num1;
+                num1 = num3;
+                num3 = num;
+            case num1 > num4:
+                num = num1;
+                num1 = num4;
+                num4 = num;
+            case num1 > num5:
+                num = num1;
+                num1 = num5;
+                num5 = num;
+
+            case num2 > num3:
+                num = num2;
+                num2 = num3;
+                num3 = num;
+
+            case num2 > num4:
+                num = num2;
+                num2 = num4;
+                num4 = num;
+
+            case num2 > num5:
+                num = num2;
+                num2 = num5;
+                num5 = num;
+
+
+            case num3 > num4:
+                num = num3;
+                num3 = num4;
+                num4 = num;
+
+            case num3 > num5:
+                num = num3;
+                num3 = num5;
+                num5 = num;
+
+            case num4 > num5:
+                num = num4;
+                num4 = num5;
+                num5 = num;
+            default:
+                console.log(num1, num2, num3, num4, num5);
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

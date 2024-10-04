@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+        let i = 0;
+        let arr = [];
+
+        arr[0] = parseInt(prompt("숫자 1번을 입력해주세요."));
+        arr[1] = parseInt(prompt("숫자 2번을 입력해주세요"));
+        arr[2] = parseInt(prompt("숫자 3번을 입력해주세요"));
+        arr[3] = parseInt(prompt("숫자 4번을 입력해주세요"));
+        arr[4] = parseInt(prompt("숫자 5번을 입력해주세요"));
+
+
+        // 만약 n1이 n2보다 크다면 n1이 n3보다 크다면?
+        // n1가 n4보다 크다면?
+
+
+
+
+
+    for(let i = 0;i<arr.length;i++){
+        for(let j = 0; j<arr.length-1;j++){
+            if (arr[i]>arr[j+1]){  // i가 5  j가 1 일 때
+                num = arr[i];  // num의 값은 5 
+                arr[i] = arr[j+1];  // arr[i]의 값이 1이고 
+                arr[j+1]=num;
+            }5
+        }
+    }
+    for(let i = 0; i < 5; i++){
+
+        document.write(arr[i]);	
+    }
+    
+    </script>
+</body>
+</html>
+
+

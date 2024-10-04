@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //소수는 1과 자기자신으로 나누어지는 1보다 큰 양의 정수를 
+
+        // let num = 0;
+        // let F = true;
+        // num = parseInt(prompt("임의의 정수 작성해보시오."));
+ 
+
+        // for(let i = 2; i<=num;i++){
+        //     if(num%i==0){
+        //         F = false;
+        //         break;
+        //     } 
+           
+        //     }
+
+        //     if(F){
+        //         document.write("소수이다.");
+        //     }
+        //     else{
+        //         document.write("소수아니다.");
+
+
+        //     }
+            
+
+        let  num = parseInt(prompt("임의의 정수 작성해보시오."));
+        let i = 0;
+        if(num==1){
+            document.write("1은 소수아님")
+        }else{
+            for(i = 2; i<=num;i++){
+                if(num%i==0){
+                    break;
+                }
+            }
+            if(num==i){
+                document.write("소수임")
+            }
+            else{
+                document.write("소수아님")
+            }
+
+        }
+            
+
+               
+
+    </script>
+    
+</body>
+</html>

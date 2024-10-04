@@ -1,0 +1,35 @@
+//안녕    -> 한줄 주석
+
+/* 안
+녕*/ -> 여러줄 주석
+
+for와 while문 각각 무한루프 돌리는 방법 
+
+for문 조건문을 true로 바꾸면 된다. 
+let sum = 0;
+for(let i = 0; i<=100;i+=2){
+    sum+=i;
+}
+console.log(sum);
+
+while문은 조건문을 true로 바꾸면 된다.
+
+let sum = 0;
+let i = 4;
+let cnt=0;
+while(i<=100){
+    cnt++;
+    i+=4;
+}
+console.log(cnt);
+
+
+
+num = num + 5;	   // num+=5;
+num = num - 5;	   // num-=5;
+num = num * 5;	   // num*=5;
+num = num / 5;	   // num/=5;
+num = num % 5;    // num+%=5;
+
+
+
