@@ -8,13 +8,14 @@
 <body>
     
 
-   <!-- 2. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 출력하시오.-->
+   <!-- 7. for 문을 사용하여 0부터 10미만의 정수의 합을 출력하시오.-->
 
    <script>
-    for(let i = 0;i<10;i+=2){
-
-        document.write(parseInt(i));
+    let sum = 0;
+    for(let i = 0;i<10;i++){
+        sum+=i;
     }
+    document.write(`${sum} <br>`);
    </script>
 </body>
 </html>
