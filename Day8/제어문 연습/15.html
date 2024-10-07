@@ -10,9 +10,17 @@
 
    <!-- 15. 정삼각형 출력하기-->
 
+
    <script>
-    for(let i = 0;i<10;i+=2){
-        document.write(i);
+    
+    for(let i = 0;i<5;i++){  //열출력
+        for(let j = 4;j>=i;j--){  // 공백출력
+            document.write("/");
+        }
+        for(let a = 1;a<=2*i+1;a++){  // 별표 출력
+            document.write("*");
+        }
+        document.write(`<br>`);
     }
    </script>
 </body>

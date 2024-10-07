@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //사용자 정의 함수 
+
+        let result = 0;  // 전역변수 
+        let n1 = 50, n2 = 30;
+
+        function sub(n1, n2) {
+            for (let i = n1; i <= n2; i++) {
+                for (let j = 1; j <= 9; j++) {
+                    console.log(`${i * j}`);
+
+                }
+            }
+
+        }
+
+
+
+        sub(3, 5);  // 함수는 무조건 호출을 해줘야 한다. 
+
+
+
+    </script>
+</body>
+
+</html>

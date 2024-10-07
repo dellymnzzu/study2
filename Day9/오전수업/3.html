@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 5. 다음 식을 만족하는 모든 A와 B의 조합을 구하는 프로그램을 작성하자. 
+	 AB
+	+BA
+	 99 -->
+    
+    <script>
+        let A = parseInt(prompt("숫자 0~9까지 입력하세요."));
+                for(let B = 9;B>=0;B--){
+                    if(A+B==9){
+                        document.write(`${A}${B} + ${B}${A} = ${A+B}${B+A} <br>`);
+                    }
+
+                }
+
+        
+        
+    </script>
+</body>
+</html>

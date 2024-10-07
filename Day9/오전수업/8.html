@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="menu" placeholder="메뉴 번호를 입력">
+    <button onclick="menuSelect()">선택</button>
+    <p>Menu<br>1. 피자<br>2. 스파게티<br>3. 햄버거<br>4. 스프<br></p>
+    <script>
+        function menuSelect() {
+            //   let menu = document.getElementById("menu").value;//  id가 menu인 값을 선택해라.  유일한 하나만 가져옴
+            let menu = document.querySelector("#menu").value;  // 전체 선택 제일 처음꺼 가져옴. 최신꺼임 선택자 이용해서 가져오는 것 
+            switch (menu) {
+                case "1":
+                    document.write("당신은 피자를 선택하셨습니다.<br>");
+                    break;
+                case "2":
+                    document.write("당신은 스파게티를 선택하셨습니다.<br>");
+                    break;
+                case "3":
+                    document.write("당신은 햄버거를 선택하셨습니다.<br>");
+                    break;
+                case "4":
+                    document.write("당신은 스프를 선택하셨습니다.<br>");
+                    break;
+                default:
+                    document.write("당신은 잘못 선택하셨습니다.<br>");
+
+            }
+        } 
+    </script>
+
+    <!--오브젝트(=객체)  -->
+</body>
+
+</html>

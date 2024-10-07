@@ -8,12 +8,32 @@
 <body>
     
 
-   <!-- 3. for문을 사용하여 0부터 10미만의 정수 중에서 짝수만을 작은 수부터 문자열로 출력하시오.-->
+   <!-- 15. 정삼각형 출력하기-->
+
 
    <script>
-    for(let i = 0;i<10;i+=2){
-        document.write(i);
+    
+    for(let i = 0; i < 5; i++) {  // 높이
+        for(let j = 4; j > i; j--) {  // 공백 출력
+            document.write(" ");
+        }
+        for(let a = 0; a < 2 * i + 1; a++) {  // 별표 출력
+            document.write("*");
+        }
+        document.write(`<br>`);
     }
+
+    // 두 번째 역 정삼각형
+    for(let i = 5; i > 0; i--) {
+        for(let j = 5; j > i; j--) {  // 공백 출력
+            document.write(" ");
+        }
+        for(let a = 0; a < 2 * i - 1; a++) {  // 별표 출력
+            document.write("*");
+        }
+        document.write(`<br>`);
+    }
+    
    </script>
 </body>
 </html>
