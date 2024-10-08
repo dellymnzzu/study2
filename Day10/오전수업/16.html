@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fac(num1){
+            for(let i=num1-1;i>1;i--){
+                if(num1%i==0){
+                    return false;
+                }
+                
+                
+            }
+            
+            
+            
+            return true;  // else 문에 주게 되면 한번밖에 출력이 되지 않는다. if문이 아니라 for문에 줘야한다. 
+            }
+
+            for(let i = 99; i>1; i--){
+            if(fac(i)){
+                console.log(i);
+            }
+        }
+
+
+        console.log(fac(5));
+
+    </script>
+</body>
+</html>

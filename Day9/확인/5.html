@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = []; // 배열 초기화
+        let i = 15678;    // 변환할 10진수
+        
+        
+        for (let j = 0; i!=0 ; j++) { 
+           
+            arr[j] = parseInt(i % 2);   //math.floor 로 풀면 된다. 
+            i=parseInt(i/2);
+        
+        }
+        
+            console.log(arr[2],arr[4]);
+        
+        
+        // 안됐던 이유 : 자바, c언어와 다르게 정수 / 정수를 하게된다면, 소수점까지 출력된다.
+        // 따라서 자바와 c언어처럼 쓰면 코딩을 짰으면 안됐고, js는 형변환을 통해 바꿔야했다.
+        //parseInt()로 형변환을 해주면 정수만 출력된다.  
+                
+            </script>
+</body>
+</html>

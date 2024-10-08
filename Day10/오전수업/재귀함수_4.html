@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Factorial(n) {
+            let arr = [];
+            let j = 0;
+            if (n == 0) {
+                return " ";
+            }
+            arr[j] = n % 2;
+            console.log(arr[j]);
+
+            return Factorial(Math.floor(n/2));
+
+
+        }
+
+
+
+
+
+
+
+        console.log(Factorial(5));
+
+
+    </script>
+</body>
+
+</html>

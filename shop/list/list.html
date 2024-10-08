@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin : 0;
+            padding : 0;
+        }
+        form{
+            margin : 10px;
+
+        }
+        .subTitle{
+            display: flex;
+            flex-direction: column;
+        }
+        .title{
+            border-bottom: 1px solid grey;
+            padding : 5px;
+        }
+        span {
+            font-size: 10px;
+            font-weight: bold;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <header>
+            <div class = "title">
+                <h2>상품 정보를 입력하세요.</h2>
+            </div>
+            <div class = "sub">
+                <div class = "subTitle">
+                    <span>카테고리</span>
+                    <input type = "text" />
+                </div>
+                <div class = "subTitle">
+                    <span>상품명</span>
+                    <input type = "text" />
+                </div>
+                <div class = "subTitle">
+                    <span>상품상태</span>
+                    <input type = "text" />
+                </div>
+                <div class = "subTitle">
+                    <span>가격</span>
+                    <input type = "text" />
+                </div>
+                <div class = "subTitle">
+                    <span>재고량</span>
+                    <input type = "text" />
+                </div>
+            </div>
+        </header>
+
+        <div class = "article">
+            <div class = "title">
+                <h2>상품 정보를 입력하세요. </h2>
+            </div>
+            <div class ="subTitle">
+                <span>제목</span>
+                <input type = "text" />
+            </div>
+            <div class = "subTitle"> 
+                <input type = "text" />
+            </div>
+        </div>
+
+        <div class ="wirteBTN">
+            <button>취소</button>
+            <button>등록</button>
+        </div>
+
+    </form>
+</body>
+</html>

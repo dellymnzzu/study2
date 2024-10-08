@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr = [];
+    const SIZE = 5;
+		let flag = true;
+    for(let i=0;i<SIZE;i++)
+    {
+      let num = prompt(i+1+"번째 숫자를 입력하세요");
+      arr.push(num);
+    }
+		
+		for(let i=0;i<arr.length-1 && flag;i++)
+		{
+			flag = false;
+			for(let j=0;j<arr.length-1-i;j++)
+			{
+				if(arr[j]>arr[j+1])
+				{
+					let temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+					flag = true;
+				}
+			}
+		}
+		
+		for(let i=0;i<arr.length;i++)
+			document.write(arr[i] + " ");	    
+  </script>
+</body>
+</html>
