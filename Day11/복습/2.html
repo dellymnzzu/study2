@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--숫자하나를 넘겨주면 그 숫자가 소수이면 true를 리턴 소수가 아니면 false를 리턴하는 메소드-->
+    <script>
+
+        function mul(a){
+            for(let i = 2; i<a;i++){
+                if (a%i==0){
+                    return false;
+
+                }
+                else {
+                    return true;
+                }
+
+            }
+
+
+        }
+
+
+console.log(mul(5));
+    </script>
+</body>
+</html>

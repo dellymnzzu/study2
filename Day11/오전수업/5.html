@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let good = function()
+        {
+            document.write('hello<br>');  //익명함수
+        };
+        good();
+        // 함수는 중복 함수 가능 대신 위에 있는게 덮어지기 때문에 아래에 있는 함수만 출력이 된다. 
+        // 대신 let으로 중복 선언하면 에러가 난다
+    // let hello = function(){
+    //   document.write("Hello<br>");
+    // };
+    // let hello = function(){
+    //   document.write("안녕<br>");
+    // }
+    // hello(); 
+    // // 변수 중복 선언 에러
+
+    </script>
+</body>
+</html>

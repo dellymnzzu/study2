@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='content'>
+        <div>A</div>
+        <div>B</div>
+    </div>
+      
+    <input type='button' value='innerText' onclick='alertInnerText();' />
+    <input type='button' value='innerHTML' onclick='alertInnerHTML()' />
+
+    <script>
+        function alertInnerText()  {
+            const element = document.getElementById('content');
+            // A
+            // B
+            alert(element.innerText);  //문자열만 가져옴 
+        }
+
+        function alertInnerHTML()  {
+            const element = document.getElementById('content');
+            // <div>A</div>
+            // <div>B</div>
+            alert(element.innerHTML);  // 태그까지 가져옴
+        }
+
+        //
+    </script>
+</body>
+</html>
+
+<!-- /
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='content'>
+    </div>
+    
+    <input type='button' value='innerText()' onclick='setInnerText()' />
+    <input type='button' value='innerHTML()' onclick='setInnerHTML()' />
+
+    <script>
+        function setInnerText()  {
+          const element = document.getElementById('content');
+          element.innerText = "<div style='color:red'>A</div>";
+        }  // "<div style='color:red'>A</div>" 이렇게 문자열 형태로 가져옴
+        
+        function setInnerHTML()  {
+          const element = document.getElementById('content');
+          element.innerHTML = "<div style='color:red'>A</div>";
+        }  // A의 컬러를 빨간색으로 변경한다. 
+
+          function alertTextContent() {
+            const element = document.getElementById('my_div');
+            alert(element.textContent);
+        }  // 스크립트나 스타일 상관없이 텍스트 값을 그대로 읽는다. 숨겨진 텍스트도 숨겨지지 않는다!
+    </script> -->
+<!-- 
+</body>
+</html> -->
+

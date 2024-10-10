@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.getElementById('hi').innerHTML = "hello";
+    </script>
+    <span id="hi">hi</span> <!--hello로 안되는 이유 : 아이디 값이 위에 있으면 가장 먼저 script 태그가 실행되고 그 다음 span 태그를 실행한다. -->
+</body>
+</html>

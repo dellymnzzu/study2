@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+        let min = parseInt(prompt("최소 정수를 을 입력하세요"));
+        let max = parseInt(prompt("최대 정수를 을 입력하세요"));
+        let arr= [];
+        for (let i = min; i<=max;i++){
+            arr.push(i);
+            
+        }
+        console.log(arr);
+        let randomNum = Math.floor(Math.random()*arr.length)+min;  // 1~5까지 
+        console.log(randomNum);
+        for(let j = 1;j<=10;j++){
+            document.write(randomNum+"<br>");
+        }
+
+        //랜덤은 무작위 재생 같은거라 생각하면 된다. 
+        // 피셔 알고리즘 생각하면 된다. -> 최대한 잘 섞어준다. 
+        
+    
+        // https://www.w3schools.com/js/js_array_sort.asp
+
+    </script>
+</body>
+</html>

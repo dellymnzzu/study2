@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>Html Basic</title>
+    <style media="screen">
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        //new Date(2024,10,0).getDate()로 하게 된다면, getLastDayOfTheMonth()를 안 해도 된다. 
+        const now = new Date();
+        const curYear = now.getFullYear();
+        const curMonth = now.getMonth();
+        // getMonth() 반환 값 현지 시간 기준 월을 나타내는 
+        // 0에서 11 사이의 정수. 0은 1월, 1은 2월... 을 나타냅니다.
+        const lastDay = new Date(curYear,curMonth+1,0).getDate();  // 마지막날 구하려면 getDate()를 넣어야한다. 
+
+        const nowTemp = new Date(curYear, curMonth, 1); // 왜 만들었는지? 당 달의 첫 번째 날짜를 기준으로 그 날짜의 요일을 알아내기 위함, 2024년 10월의 1일이 언제인지 궁금해서!
+        const firstDayOfTheWeek = nowTemp.getDay();  // 요일 반환한다. 10월 1일의 요일을 반환한다. (화요일을 반환! 따라서 2를 반환함)
+        // getDay() 반환 값 현지 시간에 따라, 주어진 날짜의 요일에 해당하는 
+        // 0 이상 6 이하의 정수. (일요일은 0, 월요일은 1, 화요일은 2, ...)
+        // 만약 nowTemp 없이 now.getDay()를 하면 10월 10일 기준 4를 보여준다. 
+        // const fistDayOftheweek1 = const lastDay = getLastDayOfTheMonth(); 
+
+
+        console.log(lastDay);
+        console.log(curYear);
+
+        let numOfWeeks = Math.ceil((firstDayOfTheWeek + lastDay) / 7);  //(2+31)/7, 올림함수를 했다. 따라서 5가 된다. , 몇줄을 출력할지 계산함!
+
+        let cell = 0;  // 공백출력하기 위한 변수이다.
+        let date = 1; // 날짜를 출력하기 위한 변수이다. 
+
+        // function getLastDayOfTheMonth() {  // lastDay , 달의 마지막을 가져오게끔 한 것. 사실 굳이 안해도 됨!
+        //     const lastDayOfTheMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]; //마지막 날짜 계산 , 2월달만 바뀐다. 
+        //     let leapYear = true;
+        //     if ((curYear % 4 == 0) && (curYear % 100 != 0)) leapYear = true;  // 윤년계산 
+        //     else if (curYear % 400 == 0) leapYear = true;  // 윤년계산 
+        //     // if( (curYear % 4 == 0) && (curYear % 100 != 0) || (curYear%400==0) ) leapYear = true;
+        //     else leapYear = false; // 윤년아님
+        //     lastDayOfTheMonth[1] = leapYear ? 29 : 28;  // 윤년이면 28을 29로 변경해. 아니면 그대로 냅둬.
+        //     return lastDayOfTheMonth[curMonth];
+        // }
+
+        function btn(click) {
+            if (click ==0){
+                curYear-- ; 
+            }
+            else {
+                curYear++;
+            }
+        }
+        console.log(curYear);
+
+        let table = `<table>`;
+            let preBTN = `<button onclick = "btn(0)"id = "prevBtn">이전 </button>`;
+            let nextBtn = `<button onclick = "btn(1)" id = "prevBtn">다음 </button>`;
+            if (preBTN)
+  
+        table += `<caption>${curYear}년 ${curMonth + 1}월</caption>`;  // 2024년 10월 출력 
+        const dayOfTheWeek = ["일", "월", "화", "수", "목", "금", "토"];
+        table += `<tr>`;
+        for (let i = 0; i < dayOfTheWeek.length; i++) {  //  
+            table += `<th>${dayOfTheWeek[i]}</th>`;
+        }
+        table += `</tr>`;
+        for (let i = 0; i < numOfWeeks; i++) { //5줄을 출력할거야.
+            table += `<tr>`;
+            for (let j = 0; j < 7; j++) {  // 7행을 출력할거야. 
+                if (cell < firstDayOfTheWeek)
+                    table += `<td>&nbsp;</td>`;  // 공백문자
+                else if (date <= lastDay)
+                    table += `<td>${date++}</td>`;  // 출력 후 1증가한다. 
+                    table += `<td>${date++}</td>`;  // 출력 후 1증가한다. 
+
+            }
+            table += `</tr>`;
+        }
+        table += `</table>`;
+        document.getElementById("demo").innerHTML = table;
+
+    </script>
+</body>
+
+</html>

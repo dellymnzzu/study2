@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style media="screen">
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        const now = new Date();
+        const year = now.getFullYear();
+        const curMonth = now.getMonth();
+        const curDate = now.getDate();
+        const lastDay = new Date(year,curMonth+1,0).getDate();;  // 마지막날 구하려면 getDate()를 넣어야한다. 
+        const nowTemp = new Date(year, curMonth, 1);  // 지금 달의 첫번째 날 
+        const fistDayOftheweek = nowTemp.getDay();
+        console.log(lastDay);
+        console.log(curDate);
+
+        let numOfWeeks = Math.ceil((fistDayOftheweek + lastDay) / 7);
+
+        let cell = 0;
+        let date = 1;
+
+        
+
+
+        // function getLastDayOftheMonth() {
+        //     const lastDayOfTheMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        //     let leapYear = true;
+        //     if ((year % 4 == 0) && (year % 100 != 0)) leapYear = true;
+        //     else if (year % 400 == 0) leapYear = true;
+        //     else leapyear = false;
+        //     lastDayOfTheMonth[1] = leapYear ? 29 : 28;
+        //     return lastDayOfTheMonth[curMonth];
+        // }
+
+        let table = `<table>`;
+        table += `<caption>${year}년 ${curMonth + 1}월</caption>`;  // 2024년 10월 출력 
+
+        const dayOfTheWeek = ["일", "월", "화", "수", "목", "금", "토"];
+        table += `<tr>`;
+        for (let i = 0; i < dayOfTheWeek.length; i++) {
+            table += `<th>${dayOfTheWeek[i]}</th>`;
+
+        }
+        table += `</tr>`;
+        for (let i = 0; i < numOfWeeks; i++) {
+            table += `<tr>`;
+            for (let j = 0; j < 7; j++) {
+                if (cell < fistDayOftheweek)
+                    table += `<td>&nbsp;</td>`;  // 공백문자
+                else if (date <= lastDay)
+                    table += `<td>${date++}</td>`;  // 출력 후 1증가한다. 
+                table += `<td>${date++}</td>`;  // 출력 후 1증가한다. 
+            }
+            table += `</tr>`;
+        }
+        table += `</table>`;
+        document.getElementById("demo").innerHTML = table;
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

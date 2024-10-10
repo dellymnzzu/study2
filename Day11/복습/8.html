@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--8. pic_bulboff.gif와 pic_bulbon.gif 이미지를 이용하여
+Light On이라는 버튼을 클릭하면 pic_bulbon.gif 이미지가 표시되도록 하고 Light Off라는 버튼을 클릭하면 pic_bulboff.gif 이미지가 표시되도록 하자.-->
+    <button type="button" onclick="Light(0)">Ligh Off</button>
+    <button type="button" onclick="Light(1)">Ligh On</button>
+    <img id = "myImage" src= "pic_bulboff.gif">
+    <script>
+        function Light(sw) {
+            let pic;
+            if(sw==0){
+                pic = "pic_bulboff.gif";
+            }
+            else{
+                pic= "pic_bulbon.gif";
+            }
+            document.querySelector("#myImage").src = pic;
+           
+        }</script>
+</body>
+</html>

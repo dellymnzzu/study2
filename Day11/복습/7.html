@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--"JavaScript can change the style of an HTML element."
+라는 문자열의 폰트 사이즈를 25px, 글자 색상을 red, 배경색을 노란색으로 바꿔보자.-->
+    <button type="button" onclick="add()">클릭</button>
+    <p id="click">JavaScript can change the style of an HTML element.</p>
+    <script>
+        function add() {
+            document.querySelector("#click").style.fontSize = "25px";
+            document.querySelector("#click").style.color = "red";
+            document.querySelector("#click").style.backgroundColor = "yellow";
+
+        }</script>
+</body>
+
+</html>
