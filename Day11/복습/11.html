@@ -7,12 +7,13 @@
 </head>
 <body>
     <script>
+        
         let arr = [];
-            for(let i = 0;i<5;i++){
-                arr[i] = parseInt(prompt(`${i+1}번째의 임의의 숫자를 입력하세요.` ));
-                
-            }
-            arr.sort();  // 가장 작은 순으로 
+        for(let i = 0;i<5;i++){
+            arr[i] = parseInt(prompt(`${i+1}번째의 임의의 숫자를 입력하세요.` ));
+            
+            arr.sort(function(a, b){return a-b});  // 가장 작은 순으로 
+        }
             document.write(arr);
             
     </script>
