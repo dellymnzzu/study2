@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("가위(0),바위(1),보(2)를 입력하세요."));
+        let arr = ["가위","바위","보"];
+        let com = Math.floor(Math.random()*3+1);
+       
+        document.write("컴은  " + arr[com - 1] + "입니다.<br>")
+        switch(num-com){
+            case 0:
+                alert("비겼습니다! ");
+                break;
+            
+            case 1 : case -2:
+                alert("이겼습니다!");
+                break;
+
+            case -2: case 1:
+                alert("졌습니다.");
+        }
+    </script>
+</body>
+</html>

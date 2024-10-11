@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>Html Basic</title>
+    <style media="screen">
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+
+        const now = new Date();
+        const curYear = now.getFullYear();
+        const curMonth = now.getMonth();
+
+        const lastDay = getLastDayOfTheMonth();
+        const nowTemp = new Date(curYear, curMonth, 1);
+        const firstDayOfTheWeek = nowTemp.getDay();
+
+        let numOfWeeks = Math.ceil((firstDayOfTheWeek + lastDay) / 7);
+        let date = 1;
+
+        function getLastDayOfTheMonth() {
+            const lastDayOfTheMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            let leapYear = (curYear % 4 === 0 && curYear % 100 !== 0) || (curYear % 400 === 0);
+            lastDayOfTheMonth[1] = leapYear ? 29 : 28;
+            return lastDayOfTheMonth[curMonth];
+        }
+
+        let table = `<table>`;
+        table += `<caption>${curYear}년 ${curMonth + 1}월</caption>`;
+        const dayOfTheWeek = ["일", "월", "화", "수", "목", "금", "토"];
+        table += `<tr>`;
+        for (let i = 0; i < dayOfTheWeek.length; i++) {
+            table += `<th>${dayOfTheWeek[i]}</th>`;
+        }
+        table += `</tr>`;
+
+        for (let i = 0; i < numOfWeeks; i++) {
+            table += `<tr>`;
+            for (let j = 0; j < 7; j++) {
+                if (i === 0 && j < firstDayOfTheWeek) {
+                    table += `<td>&nbsp;</td>`; // 첫 주의 빈 칸
+                } else if (date <= lastDay) {
+                    table += `<td>${date++}</td>`; // 날짜 추가
+                } else {
+                    table += `<td>&nbsp;</td>`; // 남은 빈 칸
+                }
+            }
+            table += `</tr>`;
+        }
+        table += `</table>`;
+        document.getElementById("demo").innerHTML = table;
+
+    </script>
+</body>
+
+</html>
