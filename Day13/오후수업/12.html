@@ -1,0 +1,30 @@
+<!-- 확인 문제
+1. 다음 배열을 가지고 다음의 내용을 메소드 채이닝으로 하여 새로운 배열을 만드시오.
+ ① 홀수만 추출, ② 100 이하의 수만 추출, ③5로 나눈 나머지가 0인 수만 추출하시오. 
+
+<script>
+// 변수를 선언합니다.
+let numbers = [273, 25, 75, 52, 103, 32, 57, 24, 76]
+
+console.log(numbers)
+</script> -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <script>
+        // 변수를 선언합니다.
+        let numbers = [273, 25, 75, 52, 103, 32, 57, 24, 76]
+        let answer = numbers.filter((i)=>i%2==1)
+        .filter((i)=>i<100)
+        .filter((i)=>i%5==0)
+        console.log(answer)
+        </script>
+
+
+
+
+</body>
+</html>

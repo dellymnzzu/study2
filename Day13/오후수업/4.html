@@ -1,0 +1,28 @@
+<!-- 4. 다음 배열중에 짝수인 숫자로 이루어진 새로운 배열을 만들자.
+그리고 그것을 출력.
+익명함수로
+
+const numbers = [0, 1, 2, 3, 4, 5]; -->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+      
+        const numbers = [0, 1, 2, 3, 4, 5];
+        numbers.filter((value)=>value%2==0)
+        .forEach((numbers)=>{
+            console.log(numbers);
+        })
+
+
+    </script>
+</body>
+</html>

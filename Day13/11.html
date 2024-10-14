@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id='div_1' class='red'>
+        red
+    </div>
+    <div id='div_2' class='blue'>
+        blue
+    </div>
+    <div id='div_3' class='green'>
+        green
+    </div>
+    <input type='button'
+            value='querySelectorAll() - Class Name 전체 찾기'
+            onclick='querySelectorAllByClassName()'/>
+            
+    <script>
+        function querySelectorAllByClassName() {
+            const div_list 
+                = document.querySelectorAll('.red, .green');
+            
+            const div_list_length = div_list.length;
+            alert(div_list_length);
+            
+            for(let i = 0; i < div_list_length; i++)  {
+                alert(div_list[i].innerText);
+            }
+        }
+
+        // querySelectorAll() - 선택자 ','로 구분하기 
+        // document.querySelectorAll('.red, .green');
+        // querySelect()와 마찬가지로 선택자를 ','로 구분한 문자열을 넘겨주면
+        // 각각의 선택자에 해당하는 모든 element를 리턴합니다.
+        // 위 예제는 클래스가 'red'인 element와 'green'인 element를 리턴합니다.
+
+
+//         Javascript에서 DOM의 특정 요소(element)를 찾는 방법
+ 
+// 1. getElementById()
+// - > 하나만 입력 가능. id 클래스만 사용가능하다. 하지만 오래된 버전이라 굳이 사용하지 않는 걸 추천
+// 2. getElementsByClassName()
+// - > className은 여러개 입력 가능하지만 querySelector()와 다르게 class만 사용 가능
+// 3. getElementsByTagName()
+// -> 태그이름만 사용 가능. 여러개 입력가능 
+// 4. querySelector()
+//-> 하나만 입력 가능. id class 둘 다 가능하다. 새로운 버전이라 추천한다. 
+// 5. querySelectorAll()
+// -> 여러개 입력가능. id class 둘 다 가능하다.  새로운 버전이라 추천
+
+//2,3 -> HTMLCollection
+// 4,5 - > 노드리스트
+    </script>
+</body>
+</html>

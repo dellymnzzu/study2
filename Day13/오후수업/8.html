@@ -1,0 +1,38 @@
+<!-- 8. 타이머 함수를 이용하여 1초마다 다음의 내용을 출력하는 함수를 만들자.
+그리고 그 함수를 5초후에 종료하는 함수를 만들자.
+화살표 함수 이용.
+
+1초마다 실행됩니다.(0번째)
+1초마다 실행됩니다.(1번째)
+1초마다 실행됩니다.(2번째) -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        let id
+        let count = 0
+        id = setInterval(() => {
+            console.log(`1초마다 실행됩니다(${count}번째)`)
+            count++
+        }, 1 * 1000)
+
+        setTimeout(() => {
+            console.log('타이머를 종료합니다.')
+            clearInterval(id)
+        }, 5 * 1000)
+
+
+    </script>
+</body>
+
+</html>
