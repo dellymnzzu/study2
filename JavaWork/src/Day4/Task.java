@@ -22,25 +22,15 @@ public class Task {
             if (usermax < usermin) {
                 System.out.println("max가 min보다 커야합니다! 다시 입력해주세요. ");
             } else {
-                if (usermax % usermin == 0) {
-                    System.out.println("최대 공약수 : " + min);
-                    System.out.println("최소 공배수 : " + (usermax * usermin / min));
-
-
-                } else {
-
-
+                if (usermax % usermin != 0) {
                     int temp = max % min;
                     max = min;
                     min = temp;
-
                 }
             }
             System.out.println("최소 공배수 : " + (usermax * usermin / min));
             System.out.println("최대 공약수 : " + min);
             break;
-
-
         }
     }
 }
