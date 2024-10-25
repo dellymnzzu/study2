@@ -18,9 +18,7 @@ public class Q4 {
             if ((input % i) == 0) {
                 yPrint(i);
 
-
             }
-
         }
         return arr;
 
