@@ -10,32 +10,39 @@ package Day01;
 
 import java.util.Scanner;
 
-static int sum() {  // 인자값 받지 않기
+class Sum { // 더하기 연산을 담당하는 클래스
 
-    static int sum(int a, int b){
+    static int sum(int a, int b) {  // 두개의 정수를 받은 다음 두개를 더한 값을 반환하는 메소드
+        return a + b;  // a+b의 값을 반환해준다.
 
     }
 
 
 }
 
-class Minus {  //인자값 받지 않기
+class Minus {  // 빼기 연산을 담당하는 클래스
+
+    static int minus(int a, int b) {  // 두개의 정수를 받은 다음 두개를 뺀 값을 반환하는 메소드
+        return a - b;  // a-b의 값을 반환해준다.
+    }
+
 
 }
 
-static void inputPrint() {  // 인자값 받기
-    System.out.println();
-
-}
-
-
+// 여기서 먼저 시작됨
 public class Q1_test {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("숫자 1을 입력하세요  : ");
-        int num1 = sc.nextInt();
-        System.out.print("숫자 2를 입력하세요  : ");
-        int num2 = sc.nextInt();
+        Scanner sc = new Scanner(System.in);  // Scanner 객체 생성
+        System.out.print("숫자 1을 입력하세요  : ");  // 숫자 1을 입력하세요 :  출력
+        int num1 = sc.nextInt();  // 첫번째 숫자를 입력받는다.
+        System.out.print("숫자 2를 입력하세요  : "); // 숫자 2를 입력하세요 : 출력
+        int num2 = sc.nextInt();  // 두번째 숫자를 입력받는다.
+
+        int s = Sum.sum(num1, num2);  // sum클래스 안에 sum 메소드를 호출하여 더하기 결과를 저장한 값을 s에 넣음
+        int m = Minus.minus(num1, num2);  // Minus 클래스 안에 Minus 메소드를 호출하여 빼기 결과를 저장한 값을 m에 넣음
+
+        System.out.println("더하기 연산" + s);  // 더하기 결과 출력
+        System.out.println("빼기 연산" + m);  // 빼기 결과 출력
 
 
     }

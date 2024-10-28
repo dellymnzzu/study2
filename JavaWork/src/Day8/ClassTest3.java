@@ -5,7 +5,7 @@ class B {
 
     String getName() {
         return name;
-    }
+    }//이름을 알아내는 도구이다.
 }
 
 public class ClassTest3 {
