@@ -17,7 +17,6 @@ public class ObjectArrayMethodTest {
                 System.out.println("index : " + i + "null 입니다. ");
             } else {
                 System.out.println("index : " + i + "객체가 입니다. ");
-
             }
         }
     }
