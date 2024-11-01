@@ -1,18 +1,18 @@
 package Day9;
 
-class Car {
+class Car {  // class Car
     String color;
     String manu;
     int maxSpeed;
 
-    Car(String c, String m, int max) {
+    Car(String c, String m, int max) {  // Car생성자이고 멤버 변수 color와 manu, maxSpeed를 넣는다.
         color = c;
         manu = m;
         maxSpeed = max;
     }
 
-    void drive() {
-        System.out.println(manu + "의 " + color + "색깔 자동차를 " + maxSpeed + "로 운전합니다.");
+    void drive() {  // 메소드 drive 선언
+        System.out.println(manu + "의 " + color + "색깔 자동차를 " + maxSpeed + "로 운전합니다.");  // 멤버변수에 선언한 값들을 넣는다.
     }
 }
 
@@ -20,7 +20,7 @@ class Bike {
     String manu;
     String function;
 
-    Bike(String m, String f) {
+    Bike(String m, String f) {  //Bike 생성자이며
         manu = m;
         function = f;
     }
@@ -46,10 +46,10 @@ class Moto {
     }
 }
 
-class Human1 {
+class Human1 {  // 사람 Human1 클래스를 주었고
     String name;
-    Car c1;
-    Car c2;
+    Car c1;  // Human이 Car을 가지고 있는 관계이다. c1은 틴트라고 생각하면 된다.
+    Car c2; // Human이 Car을 가지고 있는 관계이다. c2는 틴트 2라고 생각하면 된다.
 
     Human1(String n, Car car1, Car car2) {
         name = n;
