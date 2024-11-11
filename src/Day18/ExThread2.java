@@ -13,7 +13,6 @@ class A{
         }
     }
 }
-
 class B extends Thread{
     A a;
     int i;

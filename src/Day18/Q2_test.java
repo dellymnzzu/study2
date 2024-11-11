@@ -15,9 +15,9 @@ class Account{
 
 class Customer extends Thread{
     Account a;
-    Customer(Account a, String s){
+    Customer(Account a, String s){  // String s는 문자열로 받기 위해서
         this.a = a;
-        setName(s);
+        setName(s);  //이걸로 말고 이름을 넣어주면 된다.
     }
 
     @Override
