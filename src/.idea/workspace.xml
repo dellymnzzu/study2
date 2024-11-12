@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78c6c5cb-c372-4aef-8845-db590812e20a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/ClassQ1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/ClassQ2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/ClassQ3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/ClassQ4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Day1_class.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Day1_classUpdate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Day1_main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Day1_method.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Day4_main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Day5_Air.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassQ/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/BooleanDoubleEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/Constant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/ExplicitConversion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/HelloJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/ImplicitConversion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/IntegerVariable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/OPTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/PirntTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/Q1_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/ScannerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/StringTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/Typelnference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/Variable1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day01/characterEx1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/BasicLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/BreakExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/DoWhileExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/ForExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/IfExample1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/IfExample2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/InputTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/NestedLoop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/PrintTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/Q1_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/Q2_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/Q5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/StringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/SwitchCase1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/SwitchCase2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day02/WhileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/AcessTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/ClassArrayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/Q1_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/Q2_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day10/Q3_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day11/ObjectArrayMethodTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day11/OverloadingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day11/PrivateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day11/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day11/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day11/Q2Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day11/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day11/Q3_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day12/ExtendsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day12/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day12/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day12/QQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day12/QQQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day12/StaticTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day12/Testinheriatance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day13/CastingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day13/MethodOveridingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day13/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day13/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day13/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day13/Q3_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/AbstactTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/AnimalTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/EqualsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/InterfaceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/Q1_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/Q2_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/Q3_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/QQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day14/SuperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/ExFileReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/ExFileWrite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/ExfileReader2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/ExfileWrite2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/GeenericTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/LastAbstract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/ListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/ListTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/MapTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/MapTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/Q1_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/SetTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day15/SetTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17/ExceptionTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17/ExceptionTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17/ExceptionTest3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17/IamdaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17/InnerClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/EX1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/EXClientTCP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/EXServerTCP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ExDoubleThread1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ExDoubleThread2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ExRunable1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ExThread1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ExThread2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ExceptionTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ExceptionTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ExceptionTest3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/InnerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/Q2_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/Q3_test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/QQ2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/TeamSelect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/ThreadEX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day18/lamdaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day19/Escape_Maze.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day19/GUITest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day19/GUITest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day19/GridLayoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day19/NumberBaseBallGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day19/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day19/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/BugerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/ContinueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q1_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q3_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q3_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q3_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q3_4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q3_5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q3_6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/Q8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/RandomTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/ArrayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q2_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q2_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q3_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q3_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Q5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/QQQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day4/TempTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/ArrayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/MultiArrayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/MultiArrayTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/MultiArrayTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Q5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Q6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Q7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Q8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/MethodTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/MethodTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/MethodTest3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Q2_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day6/Q4_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/CallBtReferenceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/CallByValueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Q3_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day7/Q5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/ClassTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/ClassTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/ClassTest3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/MethodTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day8/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/HasTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/HasTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/ObjectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/Q1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/Q2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/ThisTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/ThisTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/classTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day9/classTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fight/Burf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fight/Knight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fight/Unit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fight/Villain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaWork.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manysocket/ChatSverThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manysocket/MainClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manysocket/MainServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manysocket/ReceiveDataThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Method/Q3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Method/Q4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Method/Q5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Method/Q6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OneToOneSocket/ClientThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OneToOneSocket/MainClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OneToOneSocket/MainServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OneToOneSocket/ReceiveThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OneToOneSocket/SendThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/d.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2oVzVsueuFlTNBFydhOVdhVxiYE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Day19.Escape_Maze (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day19.Escape_Maze (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day19.Escape_Maze (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day19.Escape_Maze.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day1_class.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day1_classUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day1_main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day1_method.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Day4_main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Escape_Maze.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FishGameGUI$Q2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUITest1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUITest1 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUITest1 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUITest1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUITest2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.GUITest2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GridLayoutTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.GridLayoutTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Manysocket.MainClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumberBaseBallGUI (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumberBaseBallGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q1 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q1 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q1 (4).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q1 (5).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q2 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q2 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q2 (4).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q2 (5).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Q2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JavaWork/src&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JavaWork\src\NumberBaseBallcom" />
+      <recent name="C:\JavaWork\src\Day19" />
+      <recent name="C:\JavaWork\src\Manysocket" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainServer">
+    <configuration name="Day4_main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassQ.Day4_main" />
+      <module name="JavaWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ClassQ.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Escape_Maze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day19.Escape_Maze" />
+      <module name="JavaWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumberBaseBallcom.MainClient" />
+      <module name="JavaWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NumberBaseBallcom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NumberBaseBallcom.MainServer" />
+      <module name="JavaWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NumberBaseBallcom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day19.Q1" />
+      <module name="JavaWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainServer" />
+        <item itemvalue="Application.MainClient" />
+        <item itemvalue="Application.Q1" />
+        <item itemvalue="Application.Escape_Maze" />
+        <item itemvalue="Application.Day4_main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78c6c5cb-c372-4aef-8845-db590812e20a" name="Changes" comment="" />
+      <created>1730969557587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730969557587</updated>
+    </task>
+    <servers />
+  </component>
+</project>
